@@ -13,9 +13,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -e
-          curl -fsSL -o MentorYouth_Imagefilm_V1_FullHD_16x9.mp4 https://v3b.fal.media/files/b/0aafc651/hOrp5saIQu-TXIPa81qDX_MentorYouth_Imagefilm_V1_FullHD_16x9.mp4
-          curl -fsSL -o MentorYouth_Imagefilm_V1_Handy_9x16.mp4 https://v3b.fal.media/files/b/0aafc651/9UVxF2mXrPuQerY10-NCh_MentorYouth_Imagefilm_V1_Handy_9x16.mp4
-          curl -fsSL -o MentorYouth_Teaser-A-Talente_V1_Handy_9x16.mp4 https://v3b.fal.media/files/b/0aafc6e5/ftn-1Vom7Amp45ud5KZnJ_MentorYouth_Teaser-A-Talente_V1_Handy_9x16.mp4
-          curl -fsSL -o MentorYouth_Teaser-B-Eltern_V1_Handy_9x16.mp4 https://v3b.fal.media/files/b/0aafc6e5/dnUSBgLi7uc6h4CRN-ILD_MentorYouth_Teaser-B-Eltern_V1_Handy_9x16.mp4
+          curl -fsSL -o Geburtstagsvideo_V1_Handy_9x16.mp4 https://v3b.fal.media/files/b/0aafce23/nWohdbDVQQqNTSjO2qb1A_Geburtstagsvideo_V1_Handy_9x16.mp4
           ls -la *.mp4
-          gh release create mentor-youth-transfer --repo "$GITHUB_REPOSITORY" --draft --target "$GITHUB_SHA" --title "Mentor Youth Videos (Transfer)" --notes "Temporärer Entwurf zur Dateiübertragung" *.mp4
+          gh release create transfer-2 --repo "$GITHUB_REPOSITORY" --draft --target "$GITHUB_SHA" --title "Transfer 2" --notes "Temporärer Entwurf zur Dateiübertragung" *.mp4
