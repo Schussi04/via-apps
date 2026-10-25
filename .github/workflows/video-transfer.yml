@@ -13,6 +13,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -e
-          curl -fsSL -o Geburtstagsvideo_V1_Handy_9x16.mp4 https://v3b.fal.media/files/b/0aafce23/nWohdbDVQQqNTSjO2qb1A_Geburtstagsvideo_V1_Handy_9x16.mp4
-          ls -la *.mp4
-          gh release create transfer-2 --repo "$GITHUB_REPOSITORY" --draft --target "$GITHUB_SHA" --title "Transfer 2" --notes "Temporärer Entwurf zur Dateiübertragung" *.mp4
+          curl -fsSL -o Geburtstagsvideo-Paris_V2_Handy_9x16.mp4 https://v3b.fal.media/files/b/0aafd0f7/T-v4JSos0BcN59ZjZUMoz_Geburtstagsvideo-Paris_V2_Handy_9x16.mp4
+          curl -fsSL -o Geburtstagsvideo-Sektglas_V1_Handy_9x16.mp4 https://v3b.fal.media/files/b/0aafd0f7/OfJlj1h7QlOIIT_QcCZ_2_Geburtstagsvideo-Sektglas_V1_Handy_9x16.mp4
+          gh release create transfer-3 --repo "$GITHUB_REPOSITORY" --draft --target "$GITHUB_SHA" --title "Transfer 3" --notes "Temporärer Entwurf zur Dateiübertragung" *.mp4
